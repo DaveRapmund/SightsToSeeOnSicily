@@ -11,7 +11,6 @@ function Home(){
     <div>
       <Jumbotron />
       <div className="container-fluid">
-        <h1>Home</h1>
         <Heading />
         <CarouselRow />
         <SightsToBehold />

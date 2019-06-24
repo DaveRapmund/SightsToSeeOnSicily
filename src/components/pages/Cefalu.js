@@ -11,7 +11,6 @@ function Cefalu(){
     <div>
       <Jumbotron />
       <div className="container-fluid">
-        <h1>Cefalu</h1>
         <Heading />
         <CarouselRow />
         <SightsToBehold />
