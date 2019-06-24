@@ -1,0 +1,40 @@
+.jumbotron{
+  background-image: url("../images/sicily.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  border-radius: 0 !important;
+  font-family: 'Archivo Black', sans-serif;
+  text-align: center;
+  color: maroon;
+  transition: opacity 0.7s linear;
+
+  & h2{
+    opacity: 0.95;
+    position: relative;
+    top: 200px;
+    text-shadow: 0px 1px 0px white,
+                 0px 2px 0px white,
+                 0px 3px 0px white,
+                 0px 4px 0px white,
+                 0px 5px 0px white,
+                 0px 6px 0px white,
+                 0px 7px 0px white;
+  }
+}
+
+.jumbotron-row{
+  margin: 0 !important;
+}
+
+.part-1, .part-3, .part-5{
+  font-size: 50px;
+}
+
+.part-3{
+  color: green;
+}
+
+.part-2, .part-4{
+  color: black;
+}
