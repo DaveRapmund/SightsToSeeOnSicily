@@ -1,24 +1,29 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import '../scss/style.scss';
 
 import Navbar from './Navbar';
-import Jumbotron from './Jumbotron';
-import Heading from './Heading';
-import CarouselRow from './CarouselRow';
-import SightsToBehold from './SightsToBehold';
-import SvgBackground from './SvgBackground';
+import Home from './pages/Home';
+import Cefalu from './pages/Cefalu';
+import Taormina from './pages/Taormina';
+import Palermo from './pages/Palermo';
 
 class App extends Component{
   render(){
     return(
-      <div className="container-fluid">
-        <Navbar />
-        <Jumbotron />
-        <Heading />
-        <CarouselRow />
-        <SightsToBehold />
-        <SvgBackground />
-      </div>
+      <Router>
+        <div className="app">
+          <Navbar />
+          <div className="container-fluid">
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/cefalu" component={Cefalu} />
+            <Route path="/taormina" component={Taormina} />
+            <Route path="/palermo" component={Palermo} />
+          </Switch>
+          </div>
+        </div>
+      </Router>
     )
   }
 }
