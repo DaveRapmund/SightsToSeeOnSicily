@@ -14,7 +14,6 @@ class App extends Component{
       <Router>
         <div className="app">
           <Navbar />
-          <div className="container-fluid">
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/cefalu" component={Cefalu} />
@@ -22,7 +21,6 @@ class App extends Component{
             <Route path="/palermo" component={Palermo} />
           </Switch>
           </div>
-        </div>
       </Router>
     )
   }

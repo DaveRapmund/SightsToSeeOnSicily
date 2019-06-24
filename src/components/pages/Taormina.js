@@ -9,12 +9,14 @@ import SvgBackground from '../SvgBackground';
 function Taormina(){
   return(
     <div>
-      <h1>Taormina</h1>
       <Jumbotron />
-      <Heading />
-      <CarouselRow />
-      <SightsToBehold />
-      <SvgBackground />
+      <div className="container-fluid">
+        <h1>Taormina</h1>
+        <Heading />
+        <CarouselRow />
+        <SightsToBehold />
+        <SvgBackground />
+      </div>
     </div>
   )
 }
