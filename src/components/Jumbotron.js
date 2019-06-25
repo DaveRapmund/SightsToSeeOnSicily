@@ -11,6 +11,7 @@ function Jumbotron(){
           <span className="part-4">ON </span>
           <span className="part-5">SICILY </span>
         </h2>
+        <div className="fade-out"></div>
       </div>
     </div>
   )

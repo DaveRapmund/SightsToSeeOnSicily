@@ -8,6 +8,7 @@
   text-align: center;
   color: maroon;
   transition: opacity 0.7s linear;
+  position: relative;
 
   & h2{
     opacity: 0.95;
@@ -37,4 +38,13 @@
 
 .part-2, .part-4{
   color: black;
+}
+
+.fade-out{
+  height: 200px;
+  width: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  position: absolute;
+  left: 0;
+  bottom: 0px;
 }

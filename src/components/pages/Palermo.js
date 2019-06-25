@@ -11,7 +11,6 @@ function Palermo(){
     <div>
       <Jumbotron />
       <div className="container-fluid">
-        <h1>Palermo</h1>
         <Heading />
         <CarouselRow />
         <SightsToBehold />

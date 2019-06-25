@@ -11,7 +11,6 @@ function Taormina(){
     <div>
       <Jumbotron />
       <div className="container-fluid">
-        <h1>Taormina</h1>
         <Heading />
         <CarouselRow />
         <SightsToBehold />

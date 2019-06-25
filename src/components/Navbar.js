@@ -14,7 +14,7 @@ function Navbar(){
             <Link className="nav-item nav-link mr-0 mr-sm-5 text-white" to="/">Home</Link>
             <Link className="nav-item nav-link mr-0 mr-sm-5 text-white" to="/cefalu">Cefalù</Link>
             <Link className="nav-item nav-link mr-0 mr-sm-5 text-white" to="/taormina">Taormina</Link>
-            <Link className="nav-item nav-link mr-0 mr-sm-5 text-white" to="/palermo">Palermò</Link>
+            <Link className="nav-item nav-link mr-0 mr-sm-5 text-white" to="/palermo">Palermo</Link>
           </div>
         </div>
       </nav>

@@ -1,0 +1,25 @@
+.heading-title{
+  text-transform: capitalize;
+  font-family: 'Allura', cursive;
+  font-size: 64pt;
+  text-align: center;
+}
+
+h3{
+  font-size: 16pt !important;
+  text-align: center;
+}
+
+.map{
+  background-image: url("../images/cefalu-map.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.map-vert{
+  @extend .map;
+  height: 150px;
+  width: 150px;
+  margin: -20px 0px 20px 0px;
+}
