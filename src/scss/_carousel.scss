@@ -1,0 +1,75 @@
+@import "./mixins.scss";
+
+#carousel-container{
+  margin: 0 auto;
+  position: relative;
+  height: 168.6px;
+  perspective: 1200px;
+  top: 130px;
+}
+
+%images{
+  height: 168.6px;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+img{
+  height: 168.6px;
+  width: 300px;
+}
+
+#image-1{
+  @extend %images;
+  @include rotation(0, 259.6);
+}
+
+#image-2{
+  @extend %images;
+  @include rotation(60, 259.6);
+}
+
+#image-3{
+  @extend %images;
+  @include rotation(120, 259.6);
+}
+
+#image-4{
+  @extend %images;
+  @include rotation(180, 259.6);
+}
+
+#image-5{
+  @extend %images;
+  @include rotation(240, 259.6);
+}
+
+#image-6{
+  @extend %images;
+  @include rotation(300, 259.6);
+}
+
+.carousel{
+  top: calc(50% - 112.5px);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+
+}
+
+.button-row{
+  margin-top: 20px;
+  text-align: center;
+
+  & button{
+    margin-right: 20px;
+  }
+}
