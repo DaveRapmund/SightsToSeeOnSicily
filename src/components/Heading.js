@@ -2,7 +2,10 @@ import React from 'react';
 
 function Heading(){
   const page = window.location.pathname;
-  const clean_page = page.split("/")[1];
+  let clean_page = page.split("/")[1];
+  if(clean_page === ""){
+    clean_page = "sicily";
+  }
 
   return(
     <div>
