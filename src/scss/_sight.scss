@@ -1,0 +1,47 @@
+.sight{
+  height: 300px;
+  position: relative;
+  margin-bottom: 50px;
+
+  & img{
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: auto;
+  }
+
+  & .overlay{
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    height: 20%;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 533.328px;
+    text-align: center;
+    z-index: 2;
+    bottom: 0;
+    transition: height 0.7s ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+
+    & p{
+      color: white;
+      padding: 0px 50px;
+    }
+
+    & h5{
+      font-family: 'Amatic SC', cursive;
+      font-size: 24pt;
+      line-height: 60px;
+      color: white;
+      margin-bottom: 20px;
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
