@@ -1,11 +1,13 @@
 import React from 'react';
 
-function Heading(){
+function Heading(props){
   const page = window.location.pathname;
   let clean_page = page.split("/")[1];
   if(clean_page === ""){
     clean_page = "sicily";
   }
+
+  console.log(props)
 
   return(
     <div>
@@ -31,7 +33,7 @@ function Heading(){
 
       <div className="row">
         <div className="col-12">
-          <h3>Found at the highest peak of the beautiful island of Sicily, the small fisherman's town of Cefalù is a sight to behold.</h3>
+          <h3>{props.headingText}</h3>
         </div>
       </div>
     </div>
