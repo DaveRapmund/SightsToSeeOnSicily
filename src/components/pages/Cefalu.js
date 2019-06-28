@@ -3,7 +3,6 @@ import Jumbotron from '../Jumbotron';
 import Heading from '../Heading';
 import CarouselRow from '../CarouselRow';
 import SightsToBehold from '../SightsToBehold';
-import SvgBackground from '../SvgBackground';
 import data from '../../js/data.js';
 import c1 from '../../images/c-5.jpg';
 
@@ -14,14 +13,15 @@ function Cefalu(){
     sightsTitle: data.cefalu.sightsTitle
   }
 
+  const headingProps = ["cefalu", data.cefalu.heading];
+
   return(
     <div>
       <Jumbotron headingImg={c1}/>
       <div className="container-fluid">
-        <Heading headingText={data.cefalu.heading} />
+        <Heading headingText={headingProps} />
         <CarouselRow carouselText={data.cefalu.carousel}/>
         <SightsToBehold information={sightsProps}/>
-        <SvgBackground />
       </div>
     </div>
   )

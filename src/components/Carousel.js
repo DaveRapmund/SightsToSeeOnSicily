@@ -16,9 +16,6 @@ class Carousel extends Component{
   componentDidMount(){
     $('.next').on('click', { clicked: 'next' }, this.changeImage);
     $('.prev').on('click', { clicked: 'prev' }, this.changeImage);
-
-    const path = `url(../images/${this.current_page}/1.jpg)`;
-    console.log(images);
   }
 
   changeImage = (e) => {
@@ -45,8 +42,8 @@ class Carousel extends Component{
             <div id="image-6"><img src={images[this.current_page][5]} /></div>
           </div>
           <div className="button-row">
-            <button className="next">Next</button>
-            <button className="prev">Previous</button>
+          <li className="prev">&#171;</li>
+          <li className="next">&#187;</li>
           </div>
         </div>
       </div>
