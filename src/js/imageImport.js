@@ -38,10 +38,17 @@ import s6 from '../images/s-6.jpg';
 import s7 from '../images/s-6.jpg';
 import s8 from '../images/s-6.jpg';
 
+import s from '../images/sicily-map.svg';
+import c from '../images/cefalu-map.svg';
+import t from '../images/taormina-map.svg';
+import p from '../images/palermo-map.svg';
+
+
 const cefalu = [c1, c2, c3, c4, c5, c6, c7, c8];
 const palermo = [p1, p2, p3, p4, p5, p6, p7, p8];
 const taormina = [t1, t2, t3, t4, t5, t6, t7, t8];
 const sicily = [s1, s2, s3, s4, s5, s6, s7, s8];
-const combined = {palermo, cefalu, taormina, sicily};
+const maps = [s, c, t, p]
+const combined = {palermo, cefalu, taormina, sicily, maps};
 
 export default combined;

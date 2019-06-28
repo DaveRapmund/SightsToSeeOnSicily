@@ -18,11 +18,11 @@ function SightsToBehold(props){
       <div className="row stb">
         <div className="col-12"><h3>Sights To Behold</h3></div>
       </div>
-      <div className="row">
-        <div className="col-xl-6">
+      <div className="row sights-row">
+        <div className="col-xl-6 sight-1">
           <Sight page={leftProps}/>
         </div>
-        <div className="col-xl-6">
+        <div className="col-xl-6 sight-2">
           <Sight page={rightProps} />
         </div>
       </div>

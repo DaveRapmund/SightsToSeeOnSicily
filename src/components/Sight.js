@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
-import sicily from '../images/s-1.jpg';
 
 class Sight extends Component{
   constructor(props){

@@ -3,7 +3,6 @@ import Jumbotron from '../Jumbotron';
 import Heading from '../Heading';
 import CarouselRow from '../CarouselRow';
 import SightsToBehold from '../SightsToBehold';
-import SvgBackground from '../SvgBackground';
 import data from '../../js/data';
 import t1 from '../../images/t-5.jpg';
 
@@ -13,14 +12,16 @@ function Taormina(){
     sightsText: data.taormina.sightsText,
     sightsTitle: data.taormina.sightsTitle
   }
+
+  const headingProps = ["taormina", data.taormina.heading];
+  
   return(
     <div>
       <Jumbotron headingImg={t1}/>
       <div className="container-fluid">
-        <Heading headingText={data.taormina.heading}/>
+        <Heading headingText={headingProps}/>
         <CarouselRow carouselText={data.taormina.carousel} />
         <SightsToBehold information={sightsProps}/>
-        <SvgBackground />
       </div>
     </div>
   )

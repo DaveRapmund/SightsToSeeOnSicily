@@ -1,11 +1,18 @@
 .cr-row{
   font-family: 'Quicksand', sans-serif;
+  min-height: 350px;
 }
 
 .cr-left{
   padding: 100px 160px !important;
 }
 
-.cr-right{
-  
+.sc-images{
+  margin-top: -100px;
+  margin-bottom: 200px;
+}
+
+.sc-images img{
+    width: 100%;
+    height: auto;
 }
