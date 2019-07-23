@@ -3,7 +3,6 @@ import $ from 'jquery';
 
 class Jumbotron extends Component{
   componentDidMount(){
-    console.log(this.props)
     $('.jumbotron').css({
       "background-image": "url("+this.props.headingImg+")"
     })

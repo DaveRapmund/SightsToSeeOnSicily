@@ -4,11 +4,10 @@ import combined from '../js/imageImport';
 
 class Heading extends Component{
   constructor(props){
-    super();
+    super(props);
     this.page = window.location.pathname;
     this.clean_page = this.page.split("/")[1];
     this.currentMap = null;
-
   }
 
   componentDidMount(){

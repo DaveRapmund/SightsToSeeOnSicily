@@ -1,12 +1,19 @@
-.navbar-toggler{
-  border: none !important;
-}
+.navbar-row{
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  position: absolute;
+  width: 100%;
 
-.navbar{
-  background-color: rgba(0,0,0,0.5) !important;
-  font-family: 'Amatic SC', cursive;
-  font-size: 20pt;
-  z-index: 2;
+  & .navbar{
+    background-color: rgba(0,0,0,0.5) !important;
+    font-family: 'Amatic SC', cursive;
+    font-size: 20pt;
+    z-index: 2;
+
+    & .navbar-toggler{
+      border: none !important;
+    }
+  }
 }
 
 .nav-item{
@@ -16,11 +23,4 @@
   &:hover{
     text-decoration: underline !important;
   }
-}
-
-.navbar-row{
-  margin-right: 0 !important;
-  margin-left: 0 !important;
-  position: absolute;
-  width: 100%;
 }

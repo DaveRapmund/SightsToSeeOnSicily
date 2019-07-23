@@ -1,13 +1,5 @@
 @import "./mixins.scss";
 
-#carousel-container{
-  margin: 0 auto;
-  position: relative;
-  height: 168.6px;
-  perspective: 1200px;
-  top: 130px;
-}
-
 %images{
   height: 168.6px;
   width: 300px;
@@ -20,67 +12,95 @@
   opacity: 1;
 }
 
-.button-row li{
-  display: inline-block;
-  width: 100px;
-  margin-right: 20px;
-  margin-left: 20px;
-  font-size: 20pt;
-  font-weight: bold;
-  margin-top: -20px;
-  cursor: pointer;
-}
-
-img{
+#carousel-container{
+  margin: 0 auto;
+  position: relative;
   height: 168.6px;
-  width: 300px;
-}
+  perspective: 1200px;
+  top: 130px;
 
-#image-1{
-  @extend %images;
-  @include rotation(0, 259.6);
-}
 
-#image-2{
-  @extend %images;
-  @include rotation(60, 259.6);
-}
+  & .carousel{
+    top: calc(50% - 112.5px);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    & #image-1{
+      @extend %images;
+      @include rotation(0, 259.6);
+      & img{
+        height: 168.6px;
+        width: 300px;
+      }
+    }
 
-#image-3{
-  @extend %images;
-  @include rotation(120, 259.6);
-}
+    & #image-2{
+      @extend %images;
+      @include rotation(60, 259.6);
+      & img{
+        height: 168.6px;
+        width: 300px;
+      }
+    }
 
-#image-4{
-  @extend %images;
-  @include rotation(180, 259.6);
-}
+    & #image-3{
+      @extend %images;
+      @include rotation(120, 259.6);
+      & img{
+        height: 168.6px;
+        width: 300px;
+      }
+    }
 
-#image-5{
-  @extend %images;
-  @include rotation(240, 259.6);
-}
+    & #image-4{
+      @extend %images;
+      @include rotation(180, 259.6);
+      & img{
+        height: 168.6px;
+        width: 300px;
+      }
+    }
 
-#image-6{
-  @extend %images;
-  @include rotation(300, 259.6);
-}
+    & #image-5{
+      @extend %images;
+      @include rotation(240, 259.6);
+      & img{
+        height: 168.6px;
+        width: 300px;
+      }
+    }
 
-.carousel{
-  top: calc(50% - 112.5px);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  transform-style: preserve-3d;
-  transition: transform 1s;
+    & #image-6{
+      @extend %images;
+      @include rotation(300, 259.6);
+      & img{
+        height: 168.6px;
+        width: 300px;
+      }
+    }
+  }
 
-}
+  & .button-row{
+    margin-top: 20px;
+    position: relative;
+    top: 175px;
+    text-align: center;
 
-.button-row{
-  margin-top: 20px;
-  text-align: center;
+    & button{
+      margin-right: 20px;
+    }
 
-  & button{
-    margin-right: 20px;
+    & li{
+      display: inline-block;
+      width: 100px;
+      margin-right: 20px;
+      margin-left: 20px;
+      font-size: 20pt;
+      font-weight: bold;
+      margin-top: -20px;
+      cursor: pointer;
+    }
   }
 }

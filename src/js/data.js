@@ -9,7 +9,7 @@ const data = {
                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                  culpa qui officia deserunt mollit anim id est laborum.`,
     "sightsTitle": [
-      "Cefalu Sight 1", "Cefalu Sight 2"
+      "Duomo di Cefalù", "Cefalù Beach"
     ],
     "sightsText": [
       "Cefalu Sight Text 1",
@@ -27,7 +27,7 @@ const data = {
                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                  culpa qui officia deserunt mollit anim id est laborum.`,
     "sightsTitle": [
-      "Sicily Sight 1", "Sicily Sight 2"
+      "Scala dei Turchi", "Temple of Segesta"
     ],
     "sightsText": [
       `I Love Moesje To The Moon En BEK Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -47,7 +47,7 @@ const data = {
                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                  culpa qui officia deserunt mollit anim id est laborum.`,
     "sightsTitle": [
-      "Palermo Sight 1", "Palermo Sight 2"
+      "Fontana Pretoria", "Cappella Palatina"
     ],
     "sightsText": [
       "Palermo Sight Text 1",
@@ -65,7 +65,7 @@ const data = {
                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                  culpa qui officia deserunt mollit anim id est laborum.`,
     "sightsTitle": [
-      "Taormina Sight 1", "Taormina Sight 2"
+      "Teatro Greco", "Piazza IX Aprile"
     ],
     "sightsText": [
       "Taormina Sight Text 1",

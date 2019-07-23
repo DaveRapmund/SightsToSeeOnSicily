@@ -1,31 +1,35 @@
-.jumbotron{
-  background-image: url("../images/sicily.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 100vh;
-  border-radius: 0 !important;
-  font-family: 'Archivo Black', sans-serif;
-  text-align: center;
-  color: maroon;
-  transition: opacity 0.7s linear;
-  position: relative;
-
-  & h2{
-    opacity: 0.95;
-    position: relative;
-    top: 200px;
-    text-shadow: 0px 1px 0px white,
-                 0px 2px 0px white,
-                 0px 3px 0px white,
-                 0px 4px 0px white,
-                 0px 5px 0px white,
-                 0px 6px 0px white,
-                 0px 7px 0px white;
-  }
-}
-
 .jumbotron-row{
   margin: 0 !important;
+
+  & .jumbotron{
+    background-image: url("../images/sicily.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    border-radius: 0 !important;
+    font-family: 'Archivo Black', sans-serif;
+    text-align: center;
+    color: white;
+    transition: opacity 0.7s linear;
+    position: relative;
+    text-shadow: -1px -1px 10px black;
+
+    & h2{
+      opacity: 0.95;
+      position: relative;
+      top: 200px;
+    }
+
+    & .fade-out{
+      height: 200px;
+      width: 100%;
+      background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+      position: absolute;
+      left: 0;
+      bottom: 0px;
+    }
+  }
 }
 
 .part-1, .part-3, .part-5{
@@ -33,18 +37,9 @@
 }
 
 .part-3{
-  color: green;
+  color: white;
 }
 
 .part-2, .part-4{
-  color: black;
-}
-
-.fade-out{
-  height: 200px;
-  width: 100%;
-  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
-  position: absolute;
-  left: 0;
-  bottom: 0px;
+  color: white;
 }

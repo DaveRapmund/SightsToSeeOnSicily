@@ -6,7 +6,6 @@ import SightsToBehold from '../SightsToBehold';
 import data from '../../js/data.js';
 import c1 from '../../images/c-5.jpg';
 
-
 function Cefalu(){
   const sightsProps = {
     sightsText: data.cefalu.sightsText,

@@ -34,12 +34,12 @@ class Carousel extends Component{
       <div>
         <div id="carousel-container">
           <div className="carousel">
-            <div id="image-1"><img src={images[this.current_page][0]} /></div>
-            <div id="image-2"><img src={images[this.current_page][1]} /></div>
-            <div id="image-3"><img src={images[this.current_page][2]} /></div>
-            <div id="image-4"><img src={images[this.current_page][3]} /></div>
-            <div id="image-5"><img src={images[this.current_page][4]} /></div>
-            <div id="image-6"><img src={images[this.current_page][5]} /></div>
+            <div id="image-1"><img src={images[this.current_page][0]} alt="" /></div>
+            <div id="image-2"><img src={images[this.current_page][1]} alt="" /></div>
+            <div id="image-3"><img src={images[this.current_page][2]} alt="" /></div>
+            <div id="image-4"><img src={images[this.current_page][3]} alt="" /></div>
+            <div id="image-5"><img src={images[this.current_page][4]} alt="" /></div>
+            <div id="image-6"><img src={images[this.current_page][5]} alt="" /></div>
           </div>
           <div className="button-row">
           <li className="prev">&#171;</li>

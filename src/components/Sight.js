@@ -12,7 +12,6 @@ class Sight extends Component{
       $(e.currentTarget).css({
         "height": "100%"
       })
-      console.log(e.currentTarget)
       this.clickCounter++;
     }else{
       $(e.currentTarget).css({
@@ -24,13 +23,13 @@ class Sight extends Component{
 
   render(){
     return(
-      <div className="sight">
+      <div className="sight mb-2">
         <div className="overlay" onClick={this.changeOverlay}>
           <h5>{this.props.page.title}</h5>
           <p>{this.props.page.text}
           </p>
         </div>
-        <img src={this.props.page.image} />
+        <img alt="" src={this.props.page.image} />
       </div>
     )
   }

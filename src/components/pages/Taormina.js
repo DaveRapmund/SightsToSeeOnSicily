@@ -6,7 +6,6 @@ import SightsToBehold from '../SightsToBehold';
 import data from '../../js/data';
 import t1 from '../../images/t-5.jpg';
 
-
 function Taormina(){
   const sightsProps = {
     sightsText: data.taormina.sightsText,
@@ -14,7 +13,7 @@ function Taormina(){
   }
 
   const headingProps = ["taormina", data.taormina.heading];
-  
+
   return(
     <div>
       <Jumbotron headingImg={t1}/>

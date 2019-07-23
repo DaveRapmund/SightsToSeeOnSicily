@@ -11,7 +11,6 @@ function SightsToBehold(props){
   const sightImgs = [combined[cp][6], combined[cp][7]];
   const leftProps = {"text": props.information.sightsText[0], "title": props.information.sightsTitle[0], "image": sightImgs[0]}
   const rightProps = {"text": props.information.sightsText[1], "title": props.information.sightsTitle[1], "image": sightImgs[1]}
-  console.log(sightImgs);
 
   return(
     <div>
