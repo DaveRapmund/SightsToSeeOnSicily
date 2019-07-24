@@ -7,15 +7,22 @@
     margin-bottom: 200px;
   }
 }
+
 @media screen and (max-width: 767px){
   .container-fluid{
     background-image: none;
   }
 
   .cr-left{
-    padding: 50px !important;
+    padding: 10px !important;
     text-align: center;
+    margin-bottom: 70px;
   }
+
+  .cr-row .cr-left{
+    padding: 80px 10px 10px 10px !important;
+  }
+
 
   .stb{
     margin-top: -100px !important;
@@ -24,12 +31,22 @@
   .map-vert{
     display: none;
   }
+
+  h3{
+    margin-bottom: -80px !important;
+  }
 }
+
 @media screen and (max-width: 650px){
+  .cr-row .cr-left{
+    padding: 130px 10px 10px 10px !important;
+  }
+
   .sc-images{
     margin-top: 0px;
   }
 }
+
 @media screen and (max-width: 580px){
   .sight img{
     width: 100%;
@@ -38,6 +55,10 @@
 
   .overlay{
     width: 100% !important;
+    & p{
+      font-size: 13px !important;
+      padding: 0px 10px !important;
+    }
   }
 
   h1 svg{
@@ -54,6 +75,7 @@
     display: none;
   }
 }
+
 @media screen and (max-height: 500px){
   .jumbotron h2 > span{
     font-size: 20px !important;
