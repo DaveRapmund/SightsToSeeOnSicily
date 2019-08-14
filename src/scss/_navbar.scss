@@ -5,7 +5,7 @@
   width: 100%;
 
   & .navbar{
-    background-color: rgba(0,0,0,0.5) !important;
+    background-color: rgba(0,0,0,0.6) !important;
     font-family: 'Amatic SC', cursive;
     font-size: 20pt;
     z-index: 2;
@@ -23,4 +23,34 @@
   &:hover{
     text-decoration: underline !important;
   }
+}
+
+.lt1-appear, .lt2-appear, .lt3-appear, .lt4-appear{
+  position: relative;
+  top: -100px;
+  opacity: 0;
+}
+
+.lt1-appear-active{
+  top: 0px;
+  opacity: 1;
+  transition: top 300ms ease-out, opacity 300ms linear;
+}
+
+.lt2-appear-active{
+  top: 0px;
+  opacity: 1;
+  transition: top 300ms ease-out 100ms, opacity 300ms linear 100ms;
+}
+
+.lt3-appear-active{
+  top: 0px;
+  opacity: 1;
+  transition: top 300ms ease-out 200ms, opacity 300ms linear 200ms;
+}
+
+.lt4-appear-active{
+  top: 0px;
+  opacity: 1;
+  transition: top 300ms ease-out 300ms, opacity 300ms linear 300ms;
 }

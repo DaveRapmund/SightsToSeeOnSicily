@@ -16,7 +16,6 @@
     text-shadow: -1px -1px 10px black;
 
     & h2{
-      opacity: 0.95;
       position: relative;
       top: 200px;
     }
@@ -42,4 +41,25 @@
 
 .part-2, .part-4{
   color: white;
+}
+
+.jt-appear{
+  opacity: 0;
+}
+
+.jt-appear-active{
+  opacity: 1;
+  transition: opacity 500ms ease;
+}
+
+.it-appear{
+  position: relative;
+  left: -100px;
+  opacity: 0;
+}
+
+.it-appear-active{
+  left: 0px;
+  opacity: 1;
+  transition: left 500ms ease-out 200ms, opacity 700ms ease 300ms;
 }
